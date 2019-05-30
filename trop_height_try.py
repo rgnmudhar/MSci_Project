@@ -16,6 +16,7 @@ def T(ds):
     return T_avg
 
 def altitude(p):
+    """Finds altitude from pressure using z = -H*log10(p/p0) """
     
     R = 290 #specific gas constant 
     T = 93.65 #surface temperature K from A.Coustenis book
