@@ -98,7 +98,7 @@ def plot_x(time, r, x1, x2, x3, x_label):
     return plt.tight_layout()
 
 if __name__ == '__main__':
-    files = sorted(glob.glob('titan_T21_3/run*/*.nc'))
+    files = sorted(glob.glob('grey_titan/run*/*.nc'))
     ds = xr.open_mfdataset(files, decode_times=False)
     tm = ds.coords['time'].data
     Tyears = tm/(15.9*673)
