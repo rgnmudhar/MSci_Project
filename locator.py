@@ -47,3 +47,6 @@ closestlon = print("Closest longitude:", closest(lon, lonval))
 newp = closest(p, pval)
 closestp = print("Closest pressure:", newp)
 closestz = print("Closest altitude:", (-1)*(R*T/g)*np.log((newp)/p0)/(10**3))
+
+#can use the below line but it won't tell you the index
+#print(ds.sel(lat=latval, lon=lonval, pfull=pval, method='nearest'))
